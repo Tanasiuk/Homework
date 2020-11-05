@@ -3,9 +3,6 @@ import sqlite3
 import create
 import find
 
-def find_record():
-    pass
-
 def edit_record():
     pass
 
