@@ -24,7 +24,6 @@ def find_record():
                 searching = 'name'
             elif int(searching_row) == 3:
                 searching = 'phone_number'
-                print(searching_row)
             with conn:
                 cursor.execute("SELECT * FROM Phonebook WHERE {} LIKE '%{}%'".format(searching, desired_value))
                 results = cursor.fetchall()
