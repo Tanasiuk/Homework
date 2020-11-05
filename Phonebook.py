@@ -1,6 +1,7 @@
 import sqlite3
 
 import create
+import find
 
 def find_record():
     pass
@@ -34,7 +35,7 @@ while run == 1:
         if user_input == 1:
             create.create_record()
         elif user_input == 2:
-            find_record()
+            find.find_record()
         elif user_input == 3:
             edit_record()
         elif user_input == 4:
