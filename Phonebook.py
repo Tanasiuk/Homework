@@ -2,9 +2,7 @@ import sqlite3
 
 import create
 import find
-
-def edit_record():
-    pass
+import edit
 
 def delete_record():
     pass
@@ -30,12 +28,16 @@ while run == 1:
               "0 - Отобразить БД\n")
         user_input = int(input("Укажите необходимый пункт: \n"))
         if user_input == 1:
+            print("Создать новую запись:")
             create.create_record()
         elif user_input == 2:
+            print("Найти запись:")
             find.find_record()
         elif user_input == 3:
-            edit_record()
+            print("Редактировать запись:")
+            edit.edit_record()
         elif user_input == 4:
+            print("Удалить запись:")
             delete_record()
         elif user_input == 5:
             run = 0
